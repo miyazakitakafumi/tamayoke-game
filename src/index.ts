@@ -1,3 +1,4 @@
+import { GameEngine } from './gameEngine/GameEngine'
 import { createCanvas } from './setup/canvas'
 import { createWrapEl } from './setup/wrap'
 
