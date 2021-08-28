@@ -1,4 +1,12 @@
-import { add } from './func'
+import { createCanvas } from './setup/canvas'
+import { createWrapEl } from './setup/wrap'
 
-console.log('tamayoke')
-console.log(add(1, 4))
+const app = document.getElementById('app')
+
+if (app !== null) {
+  const wrap = createWrapEl()
+  const canvas = createCanvas()
+
+  wrap.append(canvas)
+  app.append(wrap)
+}
